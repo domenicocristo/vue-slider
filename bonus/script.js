@@ -36,7 +36,7 @@ var  carousel = new Vue({
     },
     methods: {
         nextSlide: function() {
-            if (this.activeSlide === this.slides.lenght - 1) {
+            if (this.activeSlide === this.slides.length - 1) {
                 this.activeSlide = 0;
             } else {
                 this.activeSlide ++;
@@ -44,7 +44,7 @@ var  carousel = new Vue({
         },
         prevSlide: function() {
             if (this.activeSlide === 0) {
-                this.activeSlide = this.slides.lenght - 1;
+                this.activeSlide = this.slides.length - 1;
             } else {
                 this.activeSlide --;
             }
